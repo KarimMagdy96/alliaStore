@@ -27,7 +27,7 @@ export const Footer = () => {
                   className=" text-decoration-none footerLink"
                 >
                   <li>
-                    Claasic Wears <FaLongArrowAltRight />
+                    Classic Wears <FaLongArrowAltRight />
                   </li>
                 </Link>
                 <Link
