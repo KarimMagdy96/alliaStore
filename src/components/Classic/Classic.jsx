@@ -2,6 +2,7 @@ import React from "react";
 import "./classic.css";
 import { Carosel } from "./../carosel/Carosel";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 export const Classic = () => {
   let carsoulImg = [
     {
@@ -91,6 +92,10 @@ export const Classic = () => {
   ];
   return (
     <section className=" ClassicPage ">
+      <Helmet>
+        <title>CLASSIC WEAR</title>
+        <meta name="description" content="CLASSIC WEAR" />
+      </Helmet>
       <div className="container ">
         <div className="classicCollection">
           <div className="ourCategory classic">

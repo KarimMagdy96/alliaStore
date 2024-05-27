@@ -1,9 +1,11 @@
 import React from "react";
 import "./Home.css";
+
 import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Carosel } from "./../carosel/Carosel";
 import { BsWhatsapp } from "react-icons/bs";
+
 export const Home = () => {
   let carsoulImg = [
     {

@@ -1,7 +1,9 @@
 import React from "react";
 import "./casual.css";
+
 import { Carosel } from "./../carosel/Carosel";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 export const Casual = () => {
   let carsoulImg = [
     {
@@ -79,6 +81,10 @@ export const Casual = () => {
   ];
   return (
     <section className=" casualPage ">
+      <Helmet>
+        <title>CASUAL WEAR</title>
+        <meta name="description" content="CASUAL WEAR" />
+      </Helmet>
       <div className="container ">
         <div className="casualCollection">
           <div className="ourCategory casual">
