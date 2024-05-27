@@ -71,11 +71,7 @@ export const Home = () => {
               </div>
             </div>
             <div className="col-md-5 heroImg  mt-1 d-flex justify-content-center  px-2  ">
-              <img
-                className="w-100"
-                src="../../../public/imgs/alla.png"
-                alt="alla "
-              />
+              <img className="w-100" src="/imgs/alla.png" alt="alla " />
             </div>
           </div>
         </div>
