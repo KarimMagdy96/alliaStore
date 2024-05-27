@@ -7,49 +7,49 @@ import { BsWhatsapp } from "react-icons/bs";
 export const Home = () => {
   let carsoulImg = [
     {
-      imgUrl1: "../../../public/imgs/dress3.jpeg",
-      imgUrl2: "../../../public/imgs/dress3-1.jpeg",
-      imgUrl3: "../../../public/imgs/dress3-2.jpeg",
+      imgUrl1: "imgs/dress3.jpeg",
+      imgUrl2: "imgs/dress3-1.jpeg",
+      imgUrl3: "imgs/dress3-2.jpeg",
       id: "1001",
       des: "الخامة : ستان ارمانى",
       SiZe: "M",
     },
     {
-      imgUrl2: "../../../public/imgs/dress1-1.jpeg",
-      imgUrl1: "../../../public/imgs/dress1.jpeg",
-      imgUrl3: "../../../public/imgs/dress1-2.jpeg",
+      imgUrl2: "imgs/dress1-1.jpeg",
+      imgUrl1: "imgs/dress1.jpeg",
+      imgUrl3: "imgs/dress1-2.jpeg",
       id: "1002",
       des: "الخامة : ستان حرير مشجر ",
       SiZe: "M",
     },
     {
-      imgUrl1: "../../../public/imgs/dress-2.jpeg",
-      imgUrl2: "../../../public/imgs/dress-2-1.jpeg",
-      imgUrl3: "../../../public/imgs/dress2-2.jpeg",
+      imgUrl1: "imgs/dress-2.jpeg",
+      imgUrl2: "imgs/dress-2-1.jpeg",
+      imgUrl3: "imgs/dress2-2.jpeg",
       id: "1003",
       des: "الكارديجان الخامة: كريب رويال ",
       SiZe: "M",
     },
     {
-      imgUrl1: "../../../public/imgs/dress4-1.jpeg",
-      imgUrl2: "../../../public/imgs/dress4-2.jpeg",
-      imgUrl3: "../../../public/imgs/drees-4.jpeg",
+      imgUrl1: "imgs/dress4-1.jpeg",
+      imgUrl2: "imgs/dress4-2.jpeg",
+      imgUrl3: "imgs/drees-4.jpeg",
       id: "1003",
       des: "الخامه : سى واى مطرز",
       SiZe: "M",
     },
     {
-      imgUrl1: "../../../public/imgs/dress-5.jpeg",
-      imgUrl2: "../../../public/imgs/dress5-1.jpeg",
-      imgUrl3: "../../../public/imgs/dress5-2.jpeg",
+      imgUrl1: "imgs/dress-5.jpeg",
+      imgUrl2: "imgs/dress5-1.jpeg",
+      imgUrl3: "imgs/dress5-2.jpeg",
       id: "1003",
       des: "الخامه  : كريب رويال و بلوز روزالين",
       SiZe: "M",
     },
     {
-      imgUrl1: "../../../public/imgs/dress-6.jpeg",
-      imgUrl2: "../../../public/imgs/dress6-1.jpeg",
-      imgUrl3: "../../../public/imgs/dress6-2.jpeg",
+      imgUrl1: "imgs/dress-6.jpeg",
+      imgUrl2: "imgs/dress6-1.jpeg",
+      imgUrl3: "imgs/dress6-2.jpeg",
       id: "1003",
       des: "الخامه : ستان صالونه مع كافيار",
       SiZe: "M",
@@ -160,7 +160,7 @@ export const Home = () => {
                   data-parallax-scroll='{"y": 20, "x": 30,  "smoothness": 30 }'
                 >
                   <img
-                    src="../../../public/imgs/WhatsApp Image 2024-05-17 at 10.08.30 PM.jpeg"
+                    src="imgs/WhatsApp Image 2024-05-17 at 10.08.30 PM.jpeg"
                     alt
                     width={219}
                     height={292}
@@ -171,7 +171,7 @@ export const Home = () => {
                   data-parallax-scroll='{"y": 20,  "smoothness": 30 }'
                 >
                   <img
-                    src="../../../public/imgs/WhatsApp Image 2024-05-17 at 10.09.09 PM.jpeg"
+                    src="imgs/WhatsApp Image 2024-05-17 at 10.09.09 PM.jpeg"
                     alt
                     width={219}
                     height={329}
@@ -182,7 +182,7 @@ export const Home = () => {
                   data-parallax-scroll='{"y": 20, "x": -30, "smoothness": 30 }'
                 >
                   <img
-                    src="../../../public/imgs/WhatsApp Image 2024-05-17 at 10.08.37 PM.jpeg"
+                    src="imgs/WhatsApp Image 2024-05-17 at 10.08.37 PM.jpeg"
                     alt
                     width={219}
                     height={319}
@@ -193,7 +193,7 @@ export const Home = () => {
                   data-parallax-scroll='{"y": -20,  "smoothness": 30 }'
                 >
                   <img
-                    src="../../../public/imgs/WhatsApp Image 2024-05-17 at 10.08.58 PM.jpeg"
+                    src="imgs/WhatsApp Image 2024-05-17 at 10.08.58 PM.jpeg"
                     alt
                     width={216}
                     height={216}
@@ -218,11 +218,7 @@ export const Home = () => {
           </a>
         </div>
         <div className="orderimg">
-          <img
-            className=" w-100 imgggg"
-            src="../../../public/imgs/order.jpg"
-            alt=""
-          />
+          <img className=" w-100 imgggg" src="imgs/order.jpg" alt="" />
         </div>
       </article>
       <article className=" followUs">
@@ -246,46 +242,22 @@ export const Home = () => {
           >
             <div className="row">
               <div className="col-6 col-lg-2 mb-4 ">
-                <img
-                  className="w-100 h-100"
-                  src="../../../public/imgs/ins (1).png"
-                  alt=""
-                />
+                <img className="w-100 h-100" src="imgs/ins (1).png" alt="" />
               </div>
               <div className="col-6 col-lg-2 mb-4">
-                <img
-                  className="w-100 h-100"
-                  src="../../../public/imgs/ins (2).png"
-                  alt=""
-                />
+                <img className="w-100 h-100" src="imgs/ins (2).png" alt="" />
               </div>
               <div className="col-6 col-lg-2 mb-4">
-                <img
-                  className="w-100 h-100"
-                  src="../../../public/imgs/ins (3).png"
-                  alt=""
-                />
+                <img className="w-100 h-100" src="imgs/ins (3).png" alt="" />
               </div>
               <div className="col-6 col-lg-2 mb-4">
-                <img
-                  className="w-100 h-100"
-                  src="../../../public/imgs/ins (4).png"
-                  alt=""
-                />
+                <img className="w-100 h-100" src="imgs/ins (4).png" alt="" />
               </div>
               <div className="col-6 col-lg-2 mb-4">
-                <img
-                  className="w-100 h-100"
-                  src="../../../public/imgs/ins (5).png"
-                  alt=""
-                />
+                <img className="w-100 h-100" src="imgs/ins (5).png" alt="" />
               </div>
               <div className="col-6 col-lg-2 mb-4">
-                <img
-                  className="w-100 h-100"
-                  src="../../../public/imgs/ins (6).png"
-                  alt=""
-                />
+                <img className="w-100 h-100" src="imgs/ins (6).png" alt="" />
               </div>
             </div>
           </a>
