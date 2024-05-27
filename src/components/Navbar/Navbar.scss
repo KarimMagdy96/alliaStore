@@ -1,0 +1,104 @@
+nav {
+  .storeImg {
+    width: 7rem;
+    height: 5.5rem;
+  }
+  .navContent {
+    width: 90%;
+
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .links {
+      display: flex;
+      justify-content: center;
+
+      align-items: center;
+      gap: 1.5rem;
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2rem;
+
+        &.navLinks {
+          display: flex;
+          justify-content: flex-start;
+          padding-top: 100px;
+          background-color: red;
+          align-items: center;
+          position: absolute;
+          top: 12%;
+          z-index: 10;
+          left: 0;
+          right: 0;
+          height: 100%;
+          flex-direction: column;
+        }
+        li {
+          position: relative;
+
+          a {
+            text-decoration: none;
+            color: #404040;
+            font-family: sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            &::after {
+              background-color: #ff8e78;
+              position: absolute;
+              content: "";
+              bottom: -7px;
+              left: 0;
+              transition: 0.3s ease-in-out;
+              width: 0%;
+              height: 5px;
+            }
+
+            &:hover::after {
+              width: 100%;
+            }
+            &.active {
+              color: #ff8e78;
+              &::after {
+                content: "";
+                width: 100%;
+                height: 5px;
+                background-color: #ff8e78;
+                position: absolute;
+                bottom: -7px;
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+      .humurger_icon {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  nav {
+    .navContent {
+      .links {
+        ul {
+          display: none;
+        }
+        .humurger_icon {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

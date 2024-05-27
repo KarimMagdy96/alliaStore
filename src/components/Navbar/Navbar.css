@@ -1,0 +1,92 @@
+nav .storeImg {
+  width: 7rem;
+  height: 5.5rem;
+}
+nav .navContent {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .navContent .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+nav .navContent .links ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+nav .navContent .links ul.navLinks {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 100px;
+  background-color: white;
+  align-items: center;
+  position: absolute;
+  top: 12%;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  height: 100%;
+  flex-direction: column;
+}
+nav .navContent .links ul li {
+  position: relative;
+}
+nav .navContent .links ul li a {
+  text-decoration: none;
+  color: #404040;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+nav .navContent .links ul li a::after {
+  background-color: #ff8e78;
+  position: absolute;
+  content: "";
+  bottom: -7px;
+  left: 0;
+  transition: 0.3s ease-in-out;
+  width: 0%;
+  height: 5px;
+}
+nav .navContent .links ul li a:hover::after {
+  width: 100%;
+}
+nav .navContent .links ul li a.active {
+  color: #ff8e78;
+}
+nav .navContent .links ul li a.active::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: #ff8e78;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+}
+nav .navContent .links .humurger_icon {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  nav .navContent .links ul {
+    display: none;
+  }
+  nav .navContent .links .humurger_icon {
+    display: inline-block;
+  }
+} /*# sourceMappingURL=Navbar.css.map */
