@@ -59,7 +59,7 @@ export const Home = () => {
   ];
 
   return (
-    <section>
+    <section className="  overflow-hidden">
       <article className="heroSection w-100 overflow-hidden">
         <div className="container-fluid px-3 px-md-5 ">
           <div className="row  ">

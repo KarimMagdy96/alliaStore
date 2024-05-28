@@ -80,7 +80,7 @@ export const Casual = () => {
     },
   ];
   return (
-    <section className=" casualPage ">
+    <section className=" casualPage overflow-hidden">
       <Helmet>
         <title>CASUAL WEAR</title>
         <meta name="description" content="CASUAL WEAR" />

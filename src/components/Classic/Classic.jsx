@@ -92,7 +92,7 @@ export const Classic = () => {
     },
   ];
   return (
-    <section className=" ClassicPage ">
+    <section className=" ClassicPage overflow-hidden">
       <Helmet>
         <title>SOIREE WEAR</title>
         <meta name="description" content="CLASSIC WEAR" />
