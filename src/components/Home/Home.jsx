@@ -1,10 +1,10 @@
 import React from "react";
 import "./Home.css";
-
 import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Carosel } from "./../carosel/Carosel";
 import { BsWhatsapp } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 export const Home = () => {
   let carsoulImg = [
@@ -65,15 +65,45 @@ export const Home = () => {
           <div className="row  ">
             <div className="col-md-7 order-md-first order-last  d-flex justify-content-center  align-items-center  ">
               <div className="heroText ">
-                <h2>be elegant with me</h2>
-                <p>look your best in unique clothing made just for you.</p>
+                <motion.h2
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0,
+                    transition: { delay: 0.2, duration: 0.5 },
+                  }}
+                  viewport={{ once: false, amount: 0.5 }}
+                >
+                  be elegant with me
+                </motion.h2>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{
+                    opacity: 1,
+                    transition: { delay: 0.2, duration: 0.5 },
+                  }}
+                  viewport={{ once: false, amount: 0.5 }}
+                >
+                  look your best in unique clothing made just for you.
+                </motion.p>
                 <Link to="/casual" className="heroBtn">
                   See Our Collection <FaArrowRightLong className="aroowIcon" />
                 </Link>
               </div>
             </div>
             <div className="col-md-5 heroImg  mt-1 d-flex justify-content-center  px-2  ">
-              <img className="w-100" src="imgs/alla.png" alt="alla " />
+              <motion.img
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: { delay: 0.2, duration: 0.5 },
+                }}
+                viewport={{ once: false, amount: 0.5 }}
+                className="w-100"
+                src="imgs/alla.png"
+                alt="alla "
+              />
             </div>
           </div>
         </div>
@@ -82,29 +112,47 @@ export const Home = () => {
         <div className="container-fluid px-4">
           <div className="row">
             <div className="col-md-6">
-              <div className="ourCategory casual">
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: { delay: 0.1, duration: 0.3 },
+                }}
+                viewport={{ once: false, amount: 0.5 }}
+                className="ourCategory  casual"
+              >
                 <Link
                   to="/casual"
                   className="ourCategoryText text-decoration-none"
                 >
-                  <h3>WOMAN</h3>
-                  <h6>CASUAL WEAR</h6>
-                  <a href="">View collection</a>
+                  <motion.h3>WOMAN</motion.h3>
+                  <motion.h6>CASUAL WEAR</motion.h6>
+                  <Link to="/casual">View collection</Link>
                 </Link>
-              </div>
+              </motion.div>
             </div>
-            <div className="col-md-6">
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: { delay: 0.1, duration: 0.3 },
+              }}
+              viewport={{ once: false, amount: 0.5 }}
+              className="col-md-6"
+            >
               <div className="ourCategory classic">
                 <Link
                   to="/classic"
                   className="ourCategoryText text-decoration-none"
                 >
                   <h3>WOMAN</h3>
-                  <h6>ClASSIC WEAR</h6>
-                  <a href="">View collection</a>
+                  <h6>SOIREE WEAR</h6>
+                  <Link to="/classic">View collection</Link>
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </article>
@@ -119,11 +167,21 @@ export const Home = () => {
                     key={i}
                     className="col-lg-4 col-md-6 col-sm-12 col-xs-12 d-block text-decoration-none"
                   >
-                    <Carosel
-                      img1={`${item.imgUrl1}`}
-                      img2={`${item.imgUrl2}`}
-                      img3={`${item.imgUrl3}`}
-                    />
+                    <motion.div
+                      initial={{ opacity: 0, x: 50 }}
+                      whileInView={{
+                        opacity: 1,
+                        x: 0,
+                        transition: { delay: 0.1, duration: 0.3 },
+                      }}
+                      viewport={{ once: false, amount: 0.5 }}
+                    >
+                      <Carosel
+                        img1={`${item.imgUrl1}`}
+                        img2={`${item.imgUrl2}`}
+                        img3={`${item.imgUrl3}`}
+                      />
+                    </motion.div>
 
                     <div className="prodactName  pt-2 pb-3   ">
                       <div className=" size ">{`${item.SiZe}`}</div>
@@ -142,20 +200,45 @@ export const Home = () => {
           <div className="row">
             <div className="  col-md-6 d-flex justify-content-center align-items-center order-last  order-md-first">
               <div className="textContent  ">
-                <h1 className=" mb-4 aboutHeading  mt-4">
+                <motion.h1
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0,
+                    transition: { delay: 0.2, duration: 0.5 },
+                  }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  className=" mb-4 aboutHeading  mt-4"
+                >
                   Welcome to Ak Fashion Designer!{" "}
-                </h1>
-                <p>
+                </motion.h1>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{
+                    opacity: 1,
+                    transition: { delay: 0.2, duration: 0.5 },
+                  }}
+                  viewport={{ once: false, amount: 0.5 }}
+                >
                   I'm Alaa the creative mind behind the brand. My journey into
                   the world of fashion began in 2021, driven by a passion for
                   design and a love for creating unique, stylish clothing. With
                   a focus on blending timeless elegance with contemporary
                   trends, I strive to design pieces that make a statement and
                   empower individuals to express their personal style.
-                </p>
+                </motion.p>
               </div>
             </div>
-            <div className=" col-md-6  d-flex justify-content-center align-items-center">
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: { delay: 0.1, duration: 0.5 },
+              }}
+              viewport={{ once: false, amount: 0.5 }}
+              className=" col-md-6  d-flex justify-content-center align-items-center"
+            >
               <div className="box-images ">
                 <div
                   className="box-images-item box-images-1"
@@ -202,7 +285,7 @@ export const Home = () => {
                   />
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </article>
@@ -211,10 +294,21 @@ export const Home = () => {
         className="orderNow position-relative   overflow-hidden"
       >
         <div className="orderText">
-          <h4> Place Your Order Now !</h4>
+          <motion.h4
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+
+              transition: { delay: 0.2, duration: 0.5 },
+            }}
+            viewport={{ once: false, amount: 0.5 }}
+          >
+            {" "}
+            Place Your Order Now !
+          </motion.h4>
           <a href="https://wa.me/01500974437" target="_blank">
             Continue to{" "}
-            <span className=" h4 ms-1 text-success">
+            <span className=" h4 ms-1 text-success ">
               <BsWhatsapp />
             </span>
           </a>
@@ -242,7 +336,16 @@ export const Home = () => {
             target="_blank"
             className="followUsContent d-block mt-4 "
           >
-            <div className="row">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: { delay: 0.2, duration: 0.5 },
+              }}
+              viewport={{ once: false, amount: 0.5 }}
+              className="row"
+            >
               <div className="col-6 col-lg-2 mb-4 ">
                 <img className="w-100 h-100" src="imgs/ins (1).png" alt="" />
               </div>
@@ -261,7 +364,7 @@ export const Home = () => {
               <div className="col-6 col-lg-2 mb-4">
                 <img className="w-100 h-100" src="imgs/ins (6).png" alt="" />
               </div>
-            </div>
+            </motion.div>
           </a>
         </div>
       </article>

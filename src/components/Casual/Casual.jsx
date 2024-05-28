@@ -1,6 +1,6 @@
 import React from "react";
 import "./casual.css";
-
+import { motion } from "framer-motion";
 import { Carosel } from "./../carosel/Carosel";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -87,7 +87,16 @@ export const Casual = () => {
       </Helmet>
       <div className="container ">
         <div className="casualCollection">
-          <div className="ourCategory casual">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+
+              transition: { delay: 0.2, duration: 0.5 },
+            }}
+            viewport={{ once: false, amount: 0.5 }}
+            className="ourCategory casual"
+          >
             <div to="/casual" className="ourCategoryText text-decoration-none">
               <h3>CASUAL WEAR</h3>
               <div className="Navigator">
@@ -97,7 +106,7 @@ export const Casual = () => {
                 </span>{" "}
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="collectionCards">
           <div className="container">
@@ -109,11 +118,21 @@ export const Casual = () => {
                       key={i}
                       className="col-lg-4 col-md-6 col-sm-12 col-xs-12 d-block text-decoration-none"
                     >
-                      <Carosel
-                        img1={`${item.imgUrl1}`}
-                        img2={`${item.imgUrl2}`}
-                        img3={`${item.imgUrl3}`}
-                      />
+                      <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{
+                          opacity: 1,
+                          x: 0,
+                          transition: { delay: 0.2, duration: 0.5 },
+                        }}
+                        viewport={{ once: false, amount: 0.5 }}
+                      >
+                        <Carosel
+                          img1={`${item.imgUrl1}`}
+                          img2={`${item.imgUrl2}`}
+                          img3={`${item.imgUrl3}`}
+                        />
+                      </motion.div>
 
                       <div className="prodactName  pt-2 pb-3   ">
                         <div className=" size ">{`${item.SiZe}`}</div>

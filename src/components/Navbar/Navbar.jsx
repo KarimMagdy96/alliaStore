@@ -36,7 +36,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link onClick={closeMenu} to="/classic">
-                ClASSIC WEAR
+                SOIREE WEAR
               </Link>
             </li>
           </ul>

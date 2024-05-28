@@ -24,10 +24,10 @@ export const Footer = () => {
               <ul className="  d-flex justify-content-start align-items-start p-0 flex-column">
                 <Link
                   to="/classic"
-                  className=" text-decoration-none footerLink"
+                  className=" text-decoration-none footerLink w-100"
                 >
                   <li>
-                    Classic Wears <FaLongArrowAltRight />
+                    SOIREE WEAR <FaLongArrowAltRight />
                   </li>
                 </Link>
                 <Link
@@ -35,7 +35,7 @@ export const Footer = () => {
                   className=" w-100 text-decoration-none footerLink"
                 >
                   <li className="">
-                    Casual Wears <FaLongArrowAltRight />
+                    CASUAL WEAR <FaLongArrowAltRight />
                   </li>
                 </Link>
               </ul>
@@ -67,7 +67,7 @@ export const Footer = () => {
         </div>
       </footer>
       <div className="karim text-center">
-        Made With❤️by{" "}
+        Made With ❤️ by{" "}
         <a href="https://www.linkedin.com/in/karimmagdy96/" target="_blank">
           Karim
         </a>{" "}
