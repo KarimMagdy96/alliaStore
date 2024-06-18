@@ -51,10 +51,9 @@ export const Classic = () => {
                         className="col-lg-4 col-md-6 col-sm-12 col-xs-12 d-block text-decoration-none"
                       >
                         <motion.div
-                          initial={{ opacity: 0, x: 50 }}
+                          initial={{ scale: 0.9 }}
                           whileInView={{
-                            opacity: 1,
-                            x: 0,
+                            scale: 1,
                             transition: { delay: 0.2, duration: 0.5 },
                           }}
                           viewport={{ once: false, amount: 0.5 }}
@@ -63,6 +62,7 @@ export const Classic = () => {
                             img1={`${item.fields.img1.fields.file.url}`}
                             img2={`${item.fields.img2.fields.file.url}`}
                             img3={`${item.fields.img3.fields.file.url}`}
+                            alt={`${item.fields.title}`}
                           />
                         </motion.div>
 

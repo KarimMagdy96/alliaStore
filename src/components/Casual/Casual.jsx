@@ -64,6 +64,7 @@ export const Casual = () => {
                             img1={`${item.fields.img1.fields.file.url}`}
                             img2={`${item.fields.img2.fields.file.url}`}
                             img3={`${item.fields.img3.fields.file.url}`}
+                            alt={`${item.fields.title}`}
                           />
                         </motion.div>
 
