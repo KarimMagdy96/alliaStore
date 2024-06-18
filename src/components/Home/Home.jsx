@@ -63,7 +63,7 @@ export const Home = () => {
                 }}
                 viewport={{ once: false, amount: 0.5 }}
                 className="w-100"
-                src="imgs/alla.png"
+                src="imgs/alla.webp"
                 alt="alla "
               />
             </div>
