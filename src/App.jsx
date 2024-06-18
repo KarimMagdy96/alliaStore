@@ -40,11 +40,7 @@ function App() {
       ],
     },
   ]);
-  return (
-    <>
-      <RouterProvider router={Routing} />
-    </>
-  );
+  return <RouterProvider router={Routing} />;
 }
 
 export default App;
