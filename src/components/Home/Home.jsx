@@ -210,7 +210,7 @@ export const Home = () => {
                   data-parallax-scroll='{"y": 20, "x": 30,  "smoothness": 30 }'
                 >
                   <img
-                    src="imgs/WhatsApp Image 2024-05-17 at 10.08.30 PM.jpeg"
+                    src="imgs/personalImg4.webp"
                     alt=""
                     width={219}
                     height={292}
@@ -221,7 +221,7 @@ export const Home = () => {
                   data-parallax-scroll='{"y": 20,  "smoothness": 30 }'
                 >
                   <img
-                    src="imgs/WhatsApp Image 2024-05-17 at 10.09.09 PM.jpeg"
+                    src="imgs/personalImg1.webp"
                     alt=""
                     width={219}
                     height={329}
@@ -232,7 +232,7 @@ export const Home = () => {
                   data-parallax-scroll='{"y": 20, "x": -30, "smoothness": 30 }'
                 >
                   <img
-                    src="imgs/WhatsApp Image 2024-05-17 at 10.08.37 PM.jpeg"
+                    src="imgs/personalImg2.webp"
                     alt=""
                     width={219}
                     height={319}
@@ -243,7 +243,7 @@ export const Home = () => {
                   data-parallax-scroll='{"y": -20,  "smoothness": 30 }'
                 >
                   <img
-                    src="imgs/WhatsApp Image 2024-05-17 at 10.08.58 PM.jpeg"
+                    src="imgs/personalImg3.webp"
                     alt=""
                     width={216}
                     height={216}
@@ -279,7 +279,7 @@ export const Home = () => {
           </a>
         </div>
         <div className="orderimg">
-          <img className=" w-100 imgggg" src="imgs/order.jpg" alt="" />
+          <img className=" w-100 imgggg" src="imgs/order.webp" alt="" />
         </div>
       </article>
       <article className=" followUs">
@@ -312,22 +312,52 @@ export const Home = () => {
               className="row"
             >
               <div className="col-6 col-lg-2 mb-4 ">
-                <img className="w-100 h-100" src="imgs/ins (1).png" alt="" />
+                <img
+                  loading="lazy"
+                  className="w-100 h-100"
+                  src="imgs/ins (11).webp"
+                  alt="alla instagram"
+                />
               </div>
               <div className="col-6 col-lg-2 mb-4">
-                <img className="w-100 h-100" src="imgs/ins (2).png" alt="" />
+                <img
+                  loading="lazy"
+                  className="w-100 h-100"
+                  src="imgs/ins (10).webp"
+                  alt="alla instagram"
+                />
               </div>
               <div className="col-6 col-lg-2 mb-4">
-                <img className="w-100 h-100" src="imgs/ins (3).png" alt="" />
+                <img
+                  loading="lazy"
+                  className="w-100 h-100"
+                  src="imgs/ins (1).webp"
+                  alt="alla instagram"
+                />
               </div>
               <div className="col-6 col-lg-2 mb-4">
-                <img className="w-100 h-100" src="imgs/ins (4).png" alt="" />
+                <img
+                  loading="lazy"
+                  className="w-100 h-100"
+                  src="imgs/ins (8).webp"
+                  alt="alla instagram"
+                />
               </div>
               <div className="col-6 col-lg-2 mb-4">
-                <img className="w-100 h-100" src="imgs/ins (5).png" alt="" />
+                <img
+                  loading="lazy"
+                  className="w-100 h-100"
+                  src="imgs/ins (7).webp"
+                  alt="alla instagram"
+                />
               </div>
               <div className="col-6 col-lg-2 mb-4">
-                <img className="w-100 h-100" src="imgs/ins (6).png" alt="" />
+                <img
+                  loading="lazy"
+                  className="w-100 h-100"
+                  src="imgs/ins (9).webp"
+                  alt="alla instagram"
+                />
               </div>
             </motion.div>
           </a>

@@ -19,6 +19,7 @@ export const Carosel = (props) => {
         <swiper-slide>
           <div className="carsouelImgContainer w-100  d-flex justify-content-center align-items-center">
             <img
+              loading="lazy"
               className=" w-100 h-100 w-100"
               src={props.img2}
               alt={props.alt}
@@ -27,7 +28,12 @@ export const Carosel = (props) => {
         </swiper-slide>
         <swiper-slide>
           <div className="carsouelImgContainer w-100  d-flex justify-content-center align-items-center">
-            <img className="w-100  h-100" src={props.img3} alt={props.alt} />
+            <img
+              loading="lazy"
+              className="w-100  h-100"
+              src={props.img3}
+              alt={props.alt}
+            />
           </div>
         </swiper-slide>
       </swiper-container>
