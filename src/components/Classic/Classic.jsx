@@ -20,9 +20,9 @@ export const Classic = () => {
       <div className="container ">
         <div className="classicCollection">
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={{ scale: 0.9 }}
             whileInView={{
-              opacity: 1,
+              scale: 1,
               transition: { delay: 0.2, duration: 0.5 },
             }}
             viewport={{ once: false, amount: 0.5 }}

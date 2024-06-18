@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { Carosel } from "./../carosel/Carosel";
 import { BsWhatsapp } from "react-icons/bs";
 import { motion } from "framer-motion";
-
+import { Helmet } from "react-helmet";
 import { ProdactList } from "./../store/store";
 
 export const Home = () => {
@@ -17,6 +17,10 @@ export const Home = () => {
   console.log(dressData);
   return (
     <section className="  overflow-hidden">
+      <Helmet>
+        <title>Lulii’s Fashion Home</title>
+        <meta name="description" content="Home Page" />
+      </Helmet>
       <article className="heroSection w-100 overflow-hidden">
         <div className="container-fluid px-3 px-md-5 ">
           <div className="row  ">
@@ -126,9 +130,9 @@ export const Home = () => {
                       className="col-lg-4 col-md-6 col-sm-12 col-xs-12 d-block text-decoration-none"
                     >
                       <motion.div
-                        initial={{ opacity: 0 }}
+                        initial={{ scale: 0.9 }}
                         whileInView={{
-                          opacity: 1,
+                          scale: 1,
 
                           transition: { delay: 0.1, duration: 0.3 },
                         }}
