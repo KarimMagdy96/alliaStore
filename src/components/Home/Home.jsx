@@ -205,7 +205,7 @@ export const Home = () => {
                   data-parallax-scroll='{"y": 20, "x": 30,  "smoothness": 30 }'
                 >
                   <img
-                    src={dressData[0].fields.aboutMeSection.fields.file.url}
+                    src={dressData[0].fields.aboutMeSection1.fields.file.url}
                     alt="alla Photo"
                     width={219}
                     height={292}
@@ -216,7 +216,7 @@ export const Home = () => {
                   data-parallax-scroll='{"y": 20,  "smoothness": 30 }'
                 >
                   <img
-                    src={dressData[0].fields.aboutMeSection1.fields.file.url}
+                    src={dressData[0].fields.aboutMeSection.fields.file.url}
                     alt="alla Photo"
                     width={219}
                     height={329}
