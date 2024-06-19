@@ -63,7 +63,7 @@ export const Home = () => {
                 }}
                 viewport={{ once: false, amount: 0.5 }}
                 className="w-100"
-                src="imgs/alla.webp"
+                src={dressData[0].fields.mainPhoto.fields.file.url}
                 alt="alla "
               />
             </div>
