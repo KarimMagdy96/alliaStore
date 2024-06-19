@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { IoLogoInstagram } from "react-icons/io5";
 import "./footer.css";
+import { ProdactList } from "../store/store";
 export const Footer = () => {
+  let dressData;
+  let ProdactContainer = useContext(ProdactList);
+  if (ProdactContainer.products != undefined) {
+    dressData = Object.values(ProdactContainer.products);
+  }
+
   return (
     <>
       <footer>
@@ -13,11 +20,7 @@ export const Footer = () => {
           <div className="row">
             <div className="col-md-4">
               <div className="logoFooterimg"></div>
-              <p className=" footerP">
-                In Ak Fashion Designer We Believe in creating unique, stylish
-                clothing With a focus on blending timeless elegance with
-                contemporary trends.
-              </p>
+              <p className=" footerP">{dressData[0].fields.footerParagraph}</p>
             </div>
             <div className="col-md-4 ourProdacts  d-flex flex-column justify-content-start align-items-start align-items-md-center  ">
               <h5>Our Prodacts</h5>

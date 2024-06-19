@@ -129,6 +129,11 @@
   text-decoration: none;
   color: #404040;
   padding: 13px 35px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
   text-transform: uppercase;
   transition: 0.4s ease-in-out;
 }

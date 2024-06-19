@@ -14,7 +14,7 @@ export const Home = () => {
   if (ProdactContainer.products != undefined) {
     dressData = Object.values(ProdactContainer.products);
   }
-  console.log(dressData);
+
   return (
     <section className="  overflow-hidden">
       <Helmet>
@@ -35,7 +35,7 @@ export const Home = () => {
                   }}
                   viewport={{ once: false, amount: 0.5 }}
                 >
-                  be elegant with me
+                  {dressData[0].fields.mainSubTitle}
                 </motion.h2>
                 <motion.p
                   initial={{ opacity: 0, x: -50 }}
@@ -46,7 +46,7 @@ export const Home = () => {
                   }}
                   viewport={{ once: false, amount: 0.5 }}
                 >
-                  look your best in unique clothing made just for you.
+                  {dressData[0].fields.mainTitle}
                 </motion.p>
                 <Link to="/casual" className="heroBtn">
                   See Our Collection <FaArrowRightLong className="aroowIcon" />
@@ -174,7 +174,7 @@ export const Home = () => {
                   viewport={{ once: false, amount: 0.5 }}
                   className=" mb-4 aboutHeading  mt-4"
                 >
-                  Welcome to Ak Fashion Designer!{" "}
+                  {dressData[0].fields.aboutTitle}
                 </motion.h1>
                 <motion.p
                   initial={{ opacity: 0, x: -50 }}
@@ -185,12 +185,7 @@ export const Home = () => {
                   }}
                   viewport={{ once: false, amount: 0.5 }}
                 >
-                  I'm Alaa the creative mind behind the brand. My journey into
-                  the world of fashion began in 2021, driven by a passion for
-                  design and a love for creating unique, stylish clothing. With
-                  a focus on blending timeless elegance with contemporary
-                  trends, I strive to design pieces that make a statement and
-                  empower individuals to express their personal style.
+                  {dressData[0].fields.aboutParagraph}
                 </motion.p>
               </div>
             </div>
@@ -210,8 +205,8 @@ export const Home = () => {
                   data-parallax-scroll='{"y": 20, "x": 30,  "smoothness": 30 }'
                 >
                   <img
-                    src="imgs/personalImg4.webp"
-                    alt=""
+                    src={dressData[0].fields.aboutMeSection.fields.file.url}
+                    alt="alla Photo"
                     width={219}
                     height={292}
                   />
@@ -221,8 +216,8 @@ export const Home = () => {
                   data-parallax-scroll='{"y": 20,  "smoothness": 30 }'
                 >
                   <img
-                    src="imgs/personalImg1.webp"
-                    alt=""
+                    src={dressData[0].fields.aboutMeSection1.fields.file.url}
+                    alt="alla Photo"
                     width={219}
                     height={329}
                   />
@@ -232,8 +227,8 @@ export const Home = () => {
                   data-parallax-scroll='{"y": 20, "x": -30, "smoothness": 30 }'
                 >
                   <img
-                    src="imgs/personalImg2.webp"
-                    alt=""
+                    src={dressData[0].fields.aboutMeSection2.fields.file.url}
+                    alt="alla Photo"
                     width={219}
                     height={319}
                   />
@@ -243,8 +238,8 @@ export const Home = () => {
                   data-parallax-scroll='{"y": -20,  "smoothness": 30 }'
                 >
                   <img
-                    src="imgs/personalImg3.webp"
-                    alt=""
+                    src={dressData[0].fields.aboutMeSection3.fields.file.url}
+                    alt="alla Photo"
                     width={216}
                     height={216}
                   />
@@ -315,7 +310,7 @@ export const Home = () => {
                 <img
                   loading="lazy"
                   className="w-100 h-100"
-                  src="imgs/ins (11).webp"
+                  src={dressData[0].fields.instegramPhoto.fields.file.url}
                   alt="alla instagram"
                 />
               </div>
@@ -323,7 +318,7 @@ export const Home = () => {
                 <img
                   loading="lazy"
                   className="w-100 h-100"
-                  src="imgs/ins (10).webp"
+                  src={dressData[0].fields.instegramphoto1.fields.file.url}
                   alt="alla instagram"
                 />
               </div>
@@ -331,7 +326,7 @@ export const Home = () => {
                 <img
                   loading="lazy"
                   className="w-100 h-100"
-                  src="imgs/ins (1).webp"
+                  src={dressData[0].fields.instegramphoto2.fields.file.url}
                   alt="alla instagram"
                 />
               </div>
@@ -339,7 +334,7 @@ export const Home = () => {
                 <img
                   loading="lazy"
                   className="w-100 h-100"
-                  src="imgs/ins (8).webp"
+                  src={dressData[0].fields.instegramphoto3.fields.file.url}
                   alt="alla instagram"
                 />
               </div>
@@ -347,7 +342,7 @@ export const Home = () => {
                 <img
                   loading="lazy"
                   className="w-100 h-100"
-                  src="imgs/ins (7).webp"
+                  src={dressData[0].fields.instegramphoto4.fields.file.url}
                   alt="alla instagram"
                 />
               </div>
@@ -355,7 +350,7 @@ export const Home = () => {
                 <img
                   loading="lazy"
                   className="w-100 h-100"
-                  src="imgs/ins (9).webp"
+                  src={dressData[0].fields.instegramphoto5.fields.file.url}
                   alt="alla instagram"
                 />
               </div>
