@@ -14,7 +14,7 @@ export const Home = () => {
   if (ProdactContainer.products != undefined) {
     dressData = Object.values(ProdactContainer.products);
   }
-
+  console.log(dressData);
   return (
     <section className="  overflow-hidden">
       <Helmet>
