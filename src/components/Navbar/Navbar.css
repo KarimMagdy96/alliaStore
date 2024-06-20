@@ -28,7 +28,7 @@ nav .navContent .links ul.navLinks {
   display: flex;
   justify-content: flex-start;
   padding-top: 100px;
-  background-color: white;
+  background-color: red;
   align-items: center;
   position: absolute;
   top: 12%;
@@ -89,4 +89,4 @@ nav .navContent .links .humurger_icon {
   nav .navContent .links .humurger_icon {
     display: inline-block;
   }
-} /*# sourceMappingURL=Navbar.css.map */
+}/*# sourceMappingURL=Navbar.css.map */

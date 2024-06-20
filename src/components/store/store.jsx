@@ -1,9 +1,9 @@
 import { createContext, useEffect, useState } from "react";
-
 export let ProdactList = createContext();
 
 export function ProductListProvider({ children }) {
   const [products, setProducts] = useState();
+  const [Loading, isLoading] = useState(false);
   async function getDressDetails() {
     let client = contentful.createClient({
       space: "ktkqlbq77q7k",
@@ -22,7 +22,7 @@ export function ProductListProvider({ children }) {
 
   return (
     products !== undefined && (
-      <ProdactList.Provider value={{ products: products }}>
+      <ProdactList.Provider value={{ products, Loading, isLoading }}>
         {children}
       </ProdactList.Provider>
     )

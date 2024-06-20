@@ -11,7 +11,7 @@ export const Casual = () => {
   if (ProdactContainer.products != undefined) {
     dressData = Object.values(ProdactContainer.products);
   }
-  console.log(dressData);
+
   return (
     <section className=" casualPage overflow-hidden">
       <Helmet>

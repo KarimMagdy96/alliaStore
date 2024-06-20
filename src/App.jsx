@@ -13,8 +13,13 @@ import {
 import { ErrorPage } from "./components/Error/ErrorPage";
 import { Classic } from "./components/Classic/Classic";
 import { Casual } from "./components/Casual/Casual";
+import { useContext, useEffect } from "react";
+import { ProdactList } from "./components/store/store";
+import Loader from "./components/Loader/Loader";
 
 function App() {
+  let { products, loading, isLoading } = useContext(ProdactList);
+  console.log(products);
   const Routing = createHashRouter([
     {
       path: "/",
@@ -40,7 +45,10 @@ function App() {
       ],
     },
   ]);
-  return <RouterProvider router={Routing} />;
-}
+  useEffect(() => {
+    isLoading(false);
+  }, [loading]);
 
+  return loading ? <Loader /> : <RouterProvider router={Routing} />;
+}
 export default App;
