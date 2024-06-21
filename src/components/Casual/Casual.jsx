@@ -70,7 +70,7 @@ export const Casual = () => {
 
                         <div className="prodactName  pt-2 pb-1 px-1  ">
                           <div className="   ">{`${item.fields.title}`}</div>
-                          <div className=" size ">{`${item.fields.size}`}</div>
+                          <div className=" size rounded ">{`${item.fields.size}`}</div>
                         </div>
                       </Link>
                     )
