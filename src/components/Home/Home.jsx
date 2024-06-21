@@ -14,20 +14,19 @@ export const Home = () => {
   if (ProdactContainer.products != undefined) {
     dressData = Object.values(ProdactContainer.products);
   }
-  console.log(ProdactContainer.products);
+
   const result = ProdactContainer.products.filter(
     (ele) => ele.fields.alaaSiteContent == "AlaaSiteContent"
   );
 
-  console.log(dressData);
   return (
     <section className="  overflow-hidden">
       <Helmet>
         <title>Lulii’s Fashion Home</title>
         <meta name="description" content="Home Page" />
       </Helmet>
-      <article className="heroSection w-100 overflow-hidden">
-        <div className="container-fluid px-3 px-md-5 ">
+      <article className="heroSection w-100 overflow-hidden  d-flex justify-content-center align-items-center">
+        <div className="container-fluid px-3 px-md-5    ">
           <div className="row  ">
             <div className="col-md-7 order-md-first order-last  d-flex justify-content-center  align-items-center  ">
               <div className="heroText ">
@@ -53,7 +52,7 @@ export const Home = () => {
                 >
                   {result[0].fields.mainTitle}
                 </motion.p>
-                <Link to="/casual" className="heroBtn">
+                <Link to="/casual" className="heroBtn rounded">
                   See Our Collection <FaArrowRightLong className="aroowIcon" />
                 </Link>
               </div>
@@ -67,7 +66,7 @@ export const Home = () => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: false, amount: 0.5 }}
-                className="w-100"
+                className="w-100 rounded"
                 src={result[0].fields.mainPhoto.fields.file.url}
                 alt="alla "
               />
@@ -78,7 +77,7 @@ export const Home = () => {
       <article className="ourCollection">
         <div className="container-fluid px-4">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 ">
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{
@@ -86,7 +85,7 @@ export const Home = () => {
                   transition: { delay: 0.1, duration: 0.3 },
                 }}
                 viewport={{ once: false, amount: 0.5 }}
-                className="ourCategory  casual"
+                className="ourCategory  casual rounded"
               >
                 <Link
                   to="/casual"
@@ -106,9 +105,9 @@ export const Home = () => {
                 transition: { delay: 0.1, duration: 0.3 },
               }}
               viewport={{ once: false, amount: 0.5 }}
-              className="col-md-6"
+              className="col-md-6 "
             >
-              <div className="ourCategory classic">
+              <div className="ourCategory rounded classic">
                 <Link
                   to="/classic"
                   className="ourCategoryText text-decoration-none"
@@ -151,9 +150,9 @@ export const Home = () => {
                         />
                       </motion.div>
 
-                      <div className="prodactName  pt-2 pb-3   ">
-                        <div className=" size ">{`${item.fields.size}`}</div>
-                        <div className="  w-100 text-end">{`${item.fields.title}`}</div>
+                      <div className="prodactName pt-2 pb-1 px-1  ">
+                        <div className="   ">{`${item.fields.title}`}</div>
+                        <div className=" size rounded ">{`${item.fields.size}`}</div>
                       </div>
                     </Link>
                   )
@@ -278,8 +277,8 @@ export const Home = () => {
             </span>
           </a>
         </div>
-        <div className="orderimg">
-          <img className=" w-100 imgggg" src="imgs/order.webp" alt="" />
+        <div className="orderImgContainer">
+          <img className=" w-100 orderImg" src="imgs/order.webp" alt="" />
         </div>
       </article>
       <article className=" followUs">

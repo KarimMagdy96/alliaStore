@@ -20,9 +20,9 @@ export const Classic = () => {
       <div className="container ">
         <div className="classicCollection">
           <motion.div
-            initial={{ scale: 0.9 }}
+            initial={{ opacity: 0 }}
             whileInView={{
-              scale: 1,
+              opacity: 1,
               transition: { delay: 0.2, duration: 0.5 },
             }}
             viewport={{ once: false, amount: 0.5 }}
@@ -66,9 +66,9 @@ export const Classic = () => {
                           />
                         </motion.div>
 
-                        <div className="prodactName  pt-2 pb-3   ">
+                        <div className="prodactName  pt-2 pb-1 px-1  ">
+                          <div className="  ">{`${item.fields.title}`}</div>
                           <div className=" size ">{`${item.fields.size}`}</div>
-                          <div className="  w-100 text-end">{`${item.fields.title}`}</div>
                         </div>
                       </Link>
                     )

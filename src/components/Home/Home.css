@@ -270,7 +270,7 @@
   margin-top: 80px;
   height: 460px;
 }
-.orderNow:hover .orderimg {
+.orderNow:hover .orderImgContainer {
   transform: scale(1.1);
 }
 .orderText {
@@ -307,7 +307,7 @@
   background: #000;
   color: #fff;
 }
-.orderimg {
+.orderImgContainer {
   transition: all 3.5s ease 0s;
 }
 .followUs {
@@ -346,23 +346,24 @@
 swiper-container::part(bullet-active) {
   background-color: #ff8e78;
 }
-.imgggg {
+.orderImg {
   height: 460px;
 }
 .newArrive .prodactName .size {
-  width: 40px !important;
   text-align: center;
   border: 3px solid #ff8e78;
+  padding: 2px;
+
+  height: fit-content;
 }
+
 .newArrive .prodactName {
-  font-size: 1.25rem;
-  color: #404040;
-  font-weight: 700;
+  min-height: 84px;
+  font-size: 1.12rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 85%;
-  margin: auto;
+  color: #404040;
+  font-weight: 600;
 }
 @media only screen and (max-width: 992px) {
   .heroSection .container-fluid .row .heroText h2 {
@@ -390,6 +391,9 @@ swiper-container::part(bullet-active) {
   .orderText h4 {
     font-size: 2rem;
     margin-bottom: 18px;
+  }
+  .newArrive .prodactName .text-end {
+    font-size: 1.1rem;
   }
 }
 @media only screen and (max-width: 460px) {

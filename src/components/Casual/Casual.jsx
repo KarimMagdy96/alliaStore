@@ -68,9 +68,9 @@ export const Casual = () => {
                           />
                         </motion.div>
 
-                        <div className="prodactName  pt-2 pb-3   ">
+                        <div className="prodactName  pt-2 pb-1 px-1  ">
+                          <div className="   ">{`${item.fields.title}`}</div>
                           <div className=" size ">{`${item.fields.size}`}</div>
-                          <div className="  w-100 text-end">{`${item.fields.title}`}</div>
                         </div>
                       </Link>
                     )

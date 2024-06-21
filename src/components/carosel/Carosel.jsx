@@ -10,7 +10,7 @@ export const Carosel = (props) => {
         <swiper-slide>
           <div className="carsouelImgContainer w-100  d-flex justify-content-center align-items-center">
             <img
-              className="  h-100 w-100  caaroselImg"
+              className="  h-100 w-100  caaroselImg rounded"
               src={props.img1}
               alt={props.alt}
             />
@@ -20,17 +20,17 @@ export const Carosel = (props) => {
           <div className="carsouelImgContainer w-100  d-flex justify-content-center align-items-center">
             <img
               loading="lazy"
-              className=" w-100 h-100 w-100"
+              className=" w-100 h-100 w-100 rounded"
               src={props.img2}
               alt={props.alt}
             />
           </div>
         </swiper-slide>
         <swiper-slide>
-          <div className="carsouelImgContainer w-100  d-flex justify-content-center align-items-center">
+          <div className="carsouelImgContainer w-100  d-flex justify-content-center align-items-center ">
             <img
               loading="lazy"
-              className="w-100  h-100"
+              className="w-100  h-100 rounded"
               src={props.img3}
               alt={props.alt}
             />

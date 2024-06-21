@@ -1,18 +1,17 @@
 .casualPage {
   padding-bottom: 70px;
   .prodactName {
-    font-size: 1.25rem;
-    color: #404040;
-    font-weight: 700;
+    min-height: 84px;
+    font-size: 1.15rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 85%;
-    margin: auto;
+    color: #404040;
+    font-weight: 600;
     .size {
-      width: 40px !important;
       text-align: center;
       border: 3px solid #ff8e78;
+      padding: 2px;
+      height: fit-content;
     }
   }
   .ourCategory {

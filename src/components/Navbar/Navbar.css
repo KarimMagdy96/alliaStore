@@ -46,7 +46,7 @@ nav .navContent .links ul li a {
   color: #404040;
   font-family: sans-serif;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
 }
 nav .navContent .links ul li a::after {
@@ -85,6 +85,10 @@ nav .navContent .links .humurger_icon {
 @media only screen and (max-width: 992px) {
   nav .navContent .links ul {
     display: none;
+  }
+  nav .navContent .links ul.navLinks li a {
+    font-size: 1.3rem;
+    font-weight: 700;
   }
   nav .navContent .links .humurger_icon {
     display: inline-block;

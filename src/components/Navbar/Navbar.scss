@@ -47,7 +47,7 @@ nav {
             color: #404040;
             font-family: sans-serif;
             font-size: 1rem;
-            font-weight: 500;
+            font-weight: 600;
             text-transform: uppercase;
             &::after {
               background-color: #ff8e78;
@@ -94,6 +94,14 @@ nav {
       .links {
         ul {
           display: none;
+          &.navLinks {
+            li {
+              a {
+                font-size: 1.3rem;
+                font-weight: 700;
+              }
+            }
+          }
         }
         .humurger_icon {
           display: inline-block;
