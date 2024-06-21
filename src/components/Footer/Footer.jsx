@@ -17,19 +17,19 @@ export const Footer = () => {
     <>
       <footer>
         <div className="container">
-          <div className="row">
-            <div className="col-md-4">
+          <div className="row justify-content-center align-items-start ">
+            <div className="col-md-3">
               <div className="logoFooterimg"></div>
               <p className=" footerP">{dressData[0].fields.footerParagraph}</p>
             </div>
-            <div className="col-md-4 ourProdacts  d-flex flex-column justify-content-start align-items-start align-items-md-center  ">
+            <div className="col-md-3 ourProdacts  d-flex flex-column justify-content-start align-items-start align-items-md-center  ">
               <h5>Our Prodacts</h5>
               <ul className="  d-flex justify-content-start align-items-start p-0 flex-column">
                 <Link
                   to="/classic"
                   className=" text-decoration-none footerLink w-100"
                 >
-                  <li>
+                  <li className="rounded">
                     SOIREE WEAR <FaLongArrowAltRight />
                   </li>
                 </Link>
@@ -37,13 +37,13 @@ export const Footer = () => {
                   to="/casual"
                   className=" w-100 text-decoration-none footerLink"
                 >
-                  <li className="">
+                  <li className=" rounded">
                     CASUAL WEAR <FaLongArrowAltRight />
                   </li>
                 </Link>
               </ul>
             </div>
-            <div className="Social col-md-4 text-white">
+            <div className="Social col-md-3 text-white">
               <h5>Our Social Media</h5>
               <div className="SocialIcons  d-flex  gap-2  ">
                 <div>
@@ -68,13 +68,18 @@ export const Footer = () => {
             </div>
           </div>
         </div>
+        <div className="karim text-center">
+          <div>
+            This Website was designed and implemented by Dev Karim, 2024.
+          </div>
+          <div>
+            @ Follow on{" "}
+            <a href="https://www.linkedin.com/in/karimmagdy96" target="_blank">
+              LinkedIn.
+            </a>
+          </div>
+        </div>
       </footer>
-      <div className="karim text-center">
-        Made With ❤️ by{" "}
-        <a href="https://www.linkedin.com/in/karimmagdy96/" target="_blank">
-          Karim
-        </a>{" "}
-      </div>
     </>
   );
 };

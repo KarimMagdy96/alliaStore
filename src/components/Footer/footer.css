@@ -1,15 +1,15 @@
 footer {
   background-color: #ff8e78;
-  padding: 50px;
+  padding-top: 60px;
 }
 footer .logoFooterimg {
-  width: 100px;
+  width: 120px;
   height: 100px;
-  border: 5px solid rgba(64, 64, 64, 0.7137254902);
+  border: 5px solid rgba(64, 64, 64, 0.8784313725);
   background-image: url(../../../public/imgs/storeIcon.png);
   background-size: cover;
   background-position: center;
-  border-radius: 50%;
+  border-radius: 10%;
   overflow: hidden;
 }
 footer .footerP {
@@ -36,7 +36,7 @@ footer .ourProdacts ul li {
   line-height: 33px;
   color: #000;
   padding: 13px 35px;
-  margin-bottom: 7px;
+  margin-bottom: 15px;
   font-weight: 500;
   cursor: pointer;
   background: #fff;
@@ -68,11 +68,14 @@ footer .SocialIcons a {
 }
 
 .karim {
-  background-color: white;
+  border-top: 0.5px solid rgba(64, 64, 64, 0.3803921569);
+  width: 90%;
+  padding: 15px;
+  margin: 30px auto auto;
   text-align: center;
 }
 .karim a {
-  color: #ff8e78;
+  color: #404040;
   font-weight: bold;
   text-decoration: none;
 }/*# sourceMappingURL=footer.css.map */
