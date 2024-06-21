@@ -1,3 +1,16 @@
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  padding: 5px;
+  z-index: 999999999999;
+  transition: 0.3s all ease-in-out;
+}
+nav.navbar-scroll {
+  /* Set your desired background color */
+  padding: 0px; /* Set your desired padding */
+  /* Add additional styles for the scrolled state */
+}
 nav .storeImg {
   width: 7rem;
   height: 5.5rem;
@@ -29,6 +42,7 @@ nav .navContent .links ul.navLinks {
   justify-content: flex-start;
   padding-top: 100px;
   background-color: white;
+  margin-top: 30px;
   align-items: center;
   position: absolute;
   top: 12%;
@@ -85,6 +99,10 @@ nav .navContent .links .humurger_icon {
 @media only screen and (max-width: 992px) {
   nav .navContent .links ul {
     display: none;
+  }
+  nav .navContent .links ul.navLinks {
+    height: 100vh;
+    margin-top: 72px;
   }
   nav .navContent .links ul.navLinks li a {
     font-size: 1.3rem;

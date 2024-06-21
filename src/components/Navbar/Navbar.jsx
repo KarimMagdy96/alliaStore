@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 
 import { CiMenuFries } from "react-icons/ci";
 import { Link } from "react-router-dom";
 export const Navbar = () => {
   let [popMenuOpen, setpopMenuOpen] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  const handleScroll = () => {
+    if (window.scrollY > 20) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  };
   function handleResponsiveClick() {
     setpopMenuOpen(!popMenuOpen);
     if (popMenuOpen) {
@@ -18,7 +30,7 @@ export const Navbar = () => {
     document.body.style.overflow = "auto";
   }
   return (
-    <nav>
+    <nav className={scrolling ? "navbar-scroll shadow" : ""}>
       <div className="navContent">
         <img className="storeImg" src="/imgs/storeIcon.png" alt="LuliiIcon" />
         <div className="links">
@@ -40,7 +52,7 @@ export const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <div className="humurger_icon" onClick={handleResponsiveClick}>
+          <div className="humurger_icon " onClick={handleResponsiveClick}>
             <CiMenuFries />
           </div>
         </div>

@@ -1,4 +1,15 @@
 nav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  padding: 5px;
+  z-index: 999999999999;
+  transition: 0.3s all ease-in-out;
+  &.navbar-scroll {
+    /* Set your desired background color */
+    padding: 0px; /* Set your desired padding */
+    /* Add additional styles for the scrolled state */
+  }
   .storeImg {
     width: 7rem;
     height: 5.5rem;
@@ -30,6 +41,7 @@ nav {
           justify-content: flex-start;
           padding-top: 100px;
           background-color: white;
+          margin-top: 30px;
           align-items: center;
           position: absolute;
           top: 12%;
@@ -95,6 +107,8 @@ nav {
         ul {
           display: none;
           &.navLinks {
+            height: 100vh;
+            margin-top: 72px;
             li {
               a {
                 font-size: 1.3rem;

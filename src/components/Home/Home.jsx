@@ -270,7 +270,11 @@ export const Home = () => {
             {" "}
             Place Your Order Now !
           </motion.h4>
-          <a href="https://wa.me/01500974437" target="_blank">
+          <a
+            href="https://wa.me/01500974437"
+            target="_blank"
+            className=" rounded"
+          >
             Continue to{" "}
             <span className=" h4 ms-1 text-success ">
               <BsWhatsapp />
@@ -313,7 +317,7 @@ export const Home = () => {
               <div className="col-6 col-lg-2 mb-4 ">
                 <img
                   loading="lazy"
-                  className="w-100 h-100"
+                  className="w-100 h-100 rounded"
                   src={result[0].fields.instegramPhoto.fields.file.url}
                   alt="alla instagram"
                 />
@@ -321,7 +325,7 @@ export const Home = () => {
               <div className="col-6 col-lg-2 mb-4">
                 <img
                   loading="lazy"
-                  className="w-100 h-100"
+                  className="w-100 h-100 rounded"
                   src={result[0].fields.instegramphoto1.fields.file.url}
                   alt="alla instagram"
                 />
@@ -329,7 +333,7 @@ export const Home = () => {
               <div className="col-6 col-lg-2 mb-4">
                 <img
                   loading="lazy"
-                  className="w-100 h-100"
+                  className="w-100 h-100 rounded"
                   src={result[0].fields.instegramphoto2.fields.file.url}
                   alt="alla instagram"
                 />
@@ -337,7 +341,7 @@ export const Home = () => {
               <div className="col-6 col-lg-2 mb-4">
                 <img
                   loading="lazy"
-                  className="w-100 h-100"
+                  className="w-100 h-100 rounded"
                   src={result[0].fields.instegramphoto3.fields.file.url}
                   alt="alla instagram"
                 />
@@ -345,7 +349,7 @@ export const Home = () => {
               <div className="col-6 col-lg-2 mb-4">
                 <img
                   loading="lazy"
-                  className="w-100 h-100"
+                  className="w-100 h-100 rounded"
                   src={result[0].fields.instegramphoto4.fields.file.url}
                   alt="alla instagram"
                 />
@@ -353,7 +357,7 @@ export const Home = () => {
               <div className="col-6 col-lg-2 mb-4">
                 <img
                   loading="lazy"
-                  className="w-100 h-100"
+                  className="w-100 h-100 rounded"
                   src={result[0].fields.instegramphoto5.fields.file.url}
                   alt="alla instagram"
                 />
