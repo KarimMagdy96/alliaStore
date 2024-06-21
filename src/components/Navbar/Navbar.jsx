@@ -32,7 +32,9 @@ export const Navbar = () => {
   return (
     <nav className={scrolling ? "navbar-scroll shadow" : ""}>
       <div className="navContent">
-        <img className="storeImg" src="/imgs/storeIcon.png" alt="LuliiIcon" />
+        <Link to="/home">
+          <img className="storeImg" src="/imgs/storeIcon.png" alt="LuliiIcon" />
+        </Link>
         <div className="links">
           <ul className={`popmenu ${popMenuOpen ? "navLinks" : ""}`}>
             <li>
