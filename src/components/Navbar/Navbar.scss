@@ -24,23 +24,31 @@ nav {
       align-items: center;
       gap: 1.5rem;
       ul {
+        transition: 0.3s all ease-in-out;
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        left: 75%;
+        right: 0;
+        height: 100%;
+        width: 100%;
         padding: 0;
         margin: 0;
         list-style: none;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         gap: 1.2rem;
-
         &.navLinks {
+          position: absolute !important;
           display: flex;
           justify-content: flex-start;
           padding-top: 100px;
           background-color: white;
           margin-top: 30px;
           align-items: center;
-          position: absolute;
-          top: 12%;
+          top: 13%;
+          bottom: 0;
           z-index: 10;
           left: 0;
           right: 0;
@@ -101,7 +109,22 @@ nav {
     .navContent {
       .links {
         ul {
-          display: none;
+          transition: 0.5s all ease;
+          position: absolute;
+          top: 0;
+          z-index: 10;
+          left: 150%;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 1.2rem;
+
           &.navLinks {
             height: 100vh;
             margin-top: 72px;
