@@ -28,6 +28,7 @@ nav .navContent .links ul.navLinks {
   display: flex;
   justify-content: flex-start;
   padding-top: 100px;
+  background-color: white;
   align-items: center;
   position: absolute;
   top: 12%;
