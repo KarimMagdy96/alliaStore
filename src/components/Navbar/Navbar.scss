@@ -6,9 +6,7 @@ nav {
   z-index: 999999999999;
   transition: 0.3s all ease-in-out;
   &.navbar-scroll {
-    /* Set your desired background color */
-    padding: 0px; /* Set your desired padding */
-    /* Add additional styles for the scrolled state */
+    padding: 0px;
   }
   .storeImg {
     width: 7rem;

@@ -7,9 +7,7 @@ nav {
   transition: 0.3s all ease-in-out;
 }
 nav.navbar-scroll {
-  /* Set your desired background color */
-  padding: 0px; /* Set your desired padding */
-  /* Add additional styles for the scrolled state */
+  padding: 0px;
 }
 nav .storeImg {
   width: 7rem;
