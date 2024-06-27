@@ -12,15 +12,18 @@ export const Footer = () => {
   if (ProdactContainer.products != undefined) {
     dressData = Object.values(ProdactContainer.products);
   }
+  const result = ProdactContainer.products.filter(
+    (ele) => ele.fields.alaaSiteContent == "AlaaSiteContent"
+  );
 
   return (
     <>
       <footer>
         <div className="container">
-          <div className="row justify-content-center align-items-start ">
+          <div className="row justify-content-center align-items-start gap-3 ">
             <div className="col-md-3">
               <div className="logoFooterimg"></div>
-              <p className=" footerP">{dressData[0].fields.footerParagraph}</p>
+              <p className=" footerP">{result[0].fields.footerParagraph}</p>
             </div>
             <div className="col-md-3 ourProdacts  d-flex flex-column justify-content-start align-items-start align-items-md-center  ">
               <h5>Our Prodacts</h5>
